@@ -9,9 +9,7 @@ import Map from "../component/Map/Map";
 import Brand from "../component/Brand/Brand";
 import { Footer } from "../component/Footer/Footer";
 import Hero from "../component/Hero/Hero";
-import MenuFood from "../component/MenuFood/MenuFood";
-import Reserve from "../component/Reserve/Reserve";
-import Service from "../component/Service/Service";
+
 const Index = () => {
   return (
     <div>

@@ -16,7 +16,7 @@ const dataInfo = [
 
 const Embroidery = () => {
   return (
-    <section id="embroidery" className=" bg-gray/10 pt-20">
+    <section id="embroidery" className=" bg-gray/10 pt-12 mdl:pt-20">
       {/* info dev  */}
       <div className="screenPadding relative py-8 flex justify-center max-h-[320px] bg-gradient-to-l from-primary to-secondary">
         {/* image dev  */}

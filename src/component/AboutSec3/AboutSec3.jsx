@@ -10,7 +10,7 @@ const AboutSec3 = () => {
   return (
     <section
       id=""
-      className="screenPadding overflow-hidden py-16 relative min-h-[300px] bg-blue-900/30"
+      className="screenPadding overflow-hidden py-16 relative min-h-[300px] bg-black/40"
     >
       <div
         className="w-full flex flex-col items-center gap-4 text-white pt-8"
