@@ -3,17 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: arabic;
-    src: url(./font/29LTUANeoB.ttf);
+    font-family:AlHurraT ;
+    src: url(./font/Al-Hurra-Txtreg-Bold.ttf);
 }
 @font-face {
-    font-family: sansArabic;
-    src: url(./font/THESANSARABIC-BOLD.ttf);
+    font-family: AlHurraB;
+    src: url(./font/Al-Hurra-Txtreg-Light.ttf);
 }
-@font-face {
-    font-family: Mont;
-    src: url(./font/Mont-ExtraLightDEMO.otf);
-}
+
 
 
 /* ._screenPadding {

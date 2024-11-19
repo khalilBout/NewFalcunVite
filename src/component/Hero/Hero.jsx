@@ -1,19 +1,114 @@
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
-import imageSoushi from "../../../public/image/img1.png";
-import imageCrovet from "../../../public/image/img2.png";
+import logo from "../../assets/hero/logo1.png";
+// import bag from "../../assets/hero/logo1.png";
+import worker from "../../assets/hero/work.png";
+// import imageCrovet from "../../../public/image/img2.png";
 
 const Hero = () => {
-  const HeroRef = useRef();
-  const isHeroInView = useInView(HeroRef, { margin: "-100px" });
   return (
     <section
-      ref={HeroRef}
       id="home"
-      className="relative mt-28 sml:mt-32 md:mt-36 lg:mt-40   min-h-[50vh] sml:h-[65vh] md:h-[80vh] mdl:h-[85vh] lg:h-[90vh] overflow-x-hidden "
+      className="screenPadding h-[100vh] max-sm:pt-10 w-full bg-secondary/90"
     >
-      <div className="screenPadding w-full flex flex-col gap-4 md:gap-6 ">
+      <div className=" relative flex gap-6 h-full w-full">
+        {/* text div  */}
+        <div className=" max-lg:bg-slate-200/10 h-full w-full lg:w-1/2 flex flex-col justify-center items-center gap-4 ">
+          <motion.h1
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+            className="z-20 text-xl sm:text-2xl md:text-4xl font-fontTitle text-center text-black/90 flex flex-col justify-center gap-4"
+          >
+            <span>شريككم الموثوق لحلول الإعلانات</span>
+            <span>والدعاية والأزياء الموحدة</span>
+          </motion.h1>
+          <motion.h2
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 1.2,
+            }}
+            className="text-center z-20 px-10 text-[15px] md:text-[16px] text-black/90 font-fontBody "
+          >
+            <span className="text-center">
+              لسنا مجرد شركة للإعلانات والأزياء الموحدة – نحن شريككم المثالي
+              للجودة والابتكار والقيمة نحن متخصصون في الأزياء الموحدة المخصصة
+              والمنتجات الترويجية، وندعم جميع أنواع المؤسسات من خلال تقديم
+              منتجات متينة بأسعار لا تقبل المنافسة، توصيل سريع، وخيارات متنوعة
+              للتخصيص. إن التزامنا بالجودة والابتكار يبقينا دائمًا في الصدارة،
+              مما يضمن لكم أفضل الحلول لاحتياجات العلامة التجارية الخاصة بكم.
+            </span>
+          </motion.h2>
+
+          <div className="z-20 flex justify-center gap-10">
+            <motion.button
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 0.2,
+              }}
+              className="hover:scale-110 px-4 py-2 border-2 border-gray bg-gray text-white font-fontBody text-[15px] hover:bg-white hover:text-gray duration-150 transition-all cursor-pointer rounded-full "
+            >
+              إطلع على خدمتانا
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 0.2,
+              }}
+              className="hover:scale-110 px-4 py-2 bg-white border-2 border-gray text-gray hover:bg-gray hover:text-white font-fontBody text-[15px]  duration-150 transition-all cursor-pointer rounded-full "
+            >
+              تواصل معنا{" "}
+            </motion.button>
+          </div>
+        </div>
+        {/* image dev  */}
+        <div className="h-full w-full lg:w-1/2 max-lg:absolute top-0 z-10 ">
+          <div className="relative w-full h-full flex justify-center items-center ">
+            <img
+              src={worker}
+              alt="logo falkon"
+              className=" object-cover object-center"
+            />
+            <img
+              src={logo}
+              alt="logo falkon"
+              className=" opacity-10 absolute top-10 left-0 right-0 -z-50 object-cover object-center"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+
+{
+  /* <div className="screenPadding w-full flex flex-col gap-4 md:gap-6 ">
         <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full bg-primary/10 absolute -left-48 md:-left-64 lg:left-0 -top-5 "></div>
         <motion.div
           initial={{ x: "-1200px", opacity: 0 }}
@@ -65,9 +160,5 @@ const Hero = () => {
         >
           تحقق من القائمة
         </motion.button>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+      </div> */
+}

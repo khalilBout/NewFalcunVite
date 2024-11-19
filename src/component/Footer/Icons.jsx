@@ -6,19 +6,19 @@ import { BsTwitterX } from "react-icons/bs";
 const Icons = () => {
   return (
     <div className="flex gap-4">
-      <div className="flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
+      <div className=" hover:scale-125 cursor-pointer duration-200 transition-all flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
         <FaFacebookF size={16} />
       </div>
 
-      <div className="flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
+      <div className="hover:scale-125 cursor-pointer duration-200 transition-all flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
         <BsTwitterX size={16} />
       </div>
 
-      <div className="flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
+      <div className="hover:scale-125 cursor-pointer duration-200 transition-all flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
         <FaYoutube size={16} />
       </div>
 
-      <div className="flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
+      <div className="hover:scale-125 cursor-pointer duration-200 transition-all flex justify-center items-center w-[25px] h-[25px] rounded-full bg-light ">
         <TiSocialInstagram size={16} />
       </div>
     </div>

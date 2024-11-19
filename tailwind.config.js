@@ -15,16 +15,16 @@ export default {
         xl: "1280px",
       },
       fontFamily: {
-        arabic: ["arabic", "sans-serif"],
-        sansArabic: ["sansArabic", "sans-serif"],
-        Mont: ["Mont", "sans-serif"],
+        // arabic: ["arabic", "sans-serif"],6
+        fontTitle: ["AlHurraT", "sans-serif"],
+        fontBody: ["AlHurraB", "sans-serif"],
       },
       colors: {
-        primary: "#FEC3A6",
-        secondary: "#685044",
+        primary: "#ED751F",
+        secondary: "#F9DEC9",
         dark: "#000000",
-        gray: "#DDDBCC",
-        bage: "#D1DDCB",
+        gray: "#3A405A",
+        blue: "#3A405A",
         grayLight: "#DDD1CC",
         light: "#FFFFFF",
       },

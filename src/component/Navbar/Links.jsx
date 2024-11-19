@@ -8,11 +8,11 @@ const Links = ({ link }) => {
       transition={{ duration: 1 }}
     >
       <nav className=" hidden md:block">
-        <ul className="flex gap-8 ">
+        <ul className="flex max-sm:gap-4 md:gap-6 xl:gap-8 ">
           {link?.map((item) => (
             <li key={item.id}>
               <a
-                className="font-sansArabic text-[16px] md:text-[20px] lg:text-[24px] "
+                className="font-fontTitle text-[13px] md:text-[14px] lg:text-[16px] py-1 px-2 rounded-full hover:scale-110 duration-100 transition-all hover:bg-primary/70"
                 // use awlye in Navlink
                 // {({ isActive }) => {
                 //   return isActive

@@ -82,7 +82,7 @@ const MobileLink = ({ link }) => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className=" absolute top-0 left-0 w-[85vw] h-screen bg-dark/90 text-white flex flex-col items-center justify-center gap-8 text-4xl"
+            className=" absolute top-0 left-0 w-[85vw] h-screen bg-dark/90 text-white flex flex-col items-center justify-center gap-8 text-3xl"
           >
             {link?.map((link) => (
               <motion.div
