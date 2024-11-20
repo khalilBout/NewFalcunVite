@@ -19,7 +19,7 @@ const Links = ({ link }) => {
                 //     ? "font-sansArabic text-[16px] "
                 //     : "font-sansArabic text-[16px]";
                 // }}
-                href={`#${item.href}`}
+                href={`${item.href}`}
               >
                 {item.name}
               </a>

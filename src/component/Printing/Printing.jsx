@@ -1,20 +1,8 @@
 import Card from "../Card/Card";
+import { dataPrinting } from "../data";
 
 // image
 import group from "../../assets/service/Printing/grp.png";
-import bero from "../../assets/service/Printing/caty/bero.png";
-import cado from "../../assets/service/Printing/caty/cado.png";
-import serv from "../../assets/service/Printing/caty/serv.png";
-import staf from "../../assets/service/Printing/caty/staf.png";
-import tsh from "../../assets/service/Printing/caty/tsh.png";
-
-const dataInfo = [
-  { titel: "منتجات مكتبية", prix: "160", imgSrc: bero },
-  { titel: "هدايا تذكارية", prix: "200", imgSrc: cado },
-  { titel: "معدات وأدوات", prix: "280", imgSrc: staf },
-  { titel: "ملابس وأزياء", prix: "120", imgSrc: tsh },
-  { titel: "أواني منزلية", prix: "120", imgSrc: serv },
-];
 
 const Printing = () => {
   return (
@@ -51,7 +39,7 @@ const Printing = () => {
       {/* cart dev  */}
 
       <div className="screenPadding w-full py-8 flex justify-center gap-4 flex-wrap ">
-        {dataInfo.map((elm, ind) => {
+        {dataPrinting.map((elm, ind) => {
           return <Card key={ind} data={elm} />;
         })}
       </div>

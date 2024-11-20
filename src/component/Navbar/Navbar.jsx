@@ -8,17 +8,17 @@ const Navbar = () => {
     {
       id: 0,
       name: "الرئيسية",
-      href: "",
+      href: "/",
     },
     {
       id: 1,
-      name: "من نحن",
-      href: "about",
+      name: "خدماتنا",
+      href: "serves",
     },
     {
       id: 2,
-      name: "خدماتنا",
-      href: "menuFood",
+      name: "المدونة",
+      href: "blog",
     },
   ];
   return (

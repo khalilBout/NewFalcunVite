@@ -1,30 +1,8 @@
-import uni from "../../assets/service/Uniforms/uni.png";
 import Card from "../Card/Card";
+import { dataUniforms } from "../data";
 
 // image
-import women from "../../assets/service/Uniforms/caty/women.png";
-import uniform from "../../assets/service/Uniforms/caty/uni.png";
-import shonte from "../../assets/service/Uniforms/caty/shonte.png";
-import man from "../../assets/service/Uniforms/caty/man.png";
-import kok from "../../assets/service/Uniforms/caty/kok.png";
-import dr from "../../assets/service/Uniforms/caty/dr.png";
-import dosser from "../../assets/service/Uniforms/caty/dosser.png";
-import coissin from "../../assets/service/Uniforms/caty/coissin.png";
-import costim from "../../assets/service/Uniforms/caty/costim.png";
-import compl from "../../assets/service/Uniforms/caty/compl.png";
-
-const dataInfo = [
-  { titel: "ملابس ورشات", prix: "160", imgSrc: compl },
-  { titel: "ملابس ورشات", prix: "200", imgSrc: shonte },
-  { titel: "أزياء طبية ", prix: "280", imgSrc: dr },
-  { titel: "لباس مطاعم", prix: "120", imgSrc: coissin },
-  { titel: "سترات العمال", prix: "80", imgSrc: dosser },
-  { titel: "ألبسة خاصة ", prix: "175", imgSrc: uniform },
-  { titel: "بدلات رسمية", prix: "320", imgSrc: costim },
-  { titel: "عاملات ", prix: "180", imgSrc: women },
-  { titel: "لباس عمال", prix: "150", imgSrc: man },
-  { titel: "مطاعم خاصة", prix: "150", imgSrc: kok },
-];
+import uni from "../../assets/service/Uniforms/uni.png";
 
 const ServiceUniforms = () => {
   return (
@@ -60,7 +38,7 @@ const ServiceUniforms = () => {
       {/* cart dev  */}
 
       <div className="screenPadding w-full py-8 flex justify-center gap-4 flex-wrap ">
-        {dataInfo.map((elm, ind) => {
+        {dataUniforms.map((elm, ind) => {
           return <Card key={ind} data={elm} />;
         })}
       </div>

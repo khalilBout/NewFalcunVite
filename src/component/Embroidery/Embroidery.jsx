@@ -1,18 +1,8 @@
 import Card from "../Card/Card";
+import { dataPrinting } from "../data";
 
 // image
 import machi from "../../assets/service/Embroidery/machi.png";
-import cas from "../../assets/service/Embroidery/caty/cas.png";
-import shos from "../../assets/service/Embroidery/caty/shos.png";
-import tsh from "../../assets/service/Embroidery/caty/t-sh.png";
-import tshert from "../../assets/service/Embroidery/caty/t-shet.png";
-
-const dataInfo = [
-  { titel: "قبعات", prix: "160", imgSrc: cas },
-  { titel: "أحذية", prix: "200", imgSrc: shos },
-  { titel: "ملابس مهنية", prix: "280", imgSrc: tsh },
-  { titel: "مختلف الملابس", prix: "120", imgSrc: tshert },
-];
 
 const Embroidery = () => {
   return (
@@ -47,7 +37,7 @@ const Embroidery = () => {
       {/* cart dev  */}
 
       <div className="screenPadding w-full py-8 flex justify-center gap-4 flex-wrap ">
-        {dataInfo.map((elm, ind) => {
+        {dataPrinting.map((elm, ind) => {
           return <Card key={ind} data={elm} />;
         })}
       </div>

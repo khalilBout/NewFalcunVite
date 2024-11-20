@@ -4,6 +4,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 
 import Root from "./pages/Root";
+import Serves from "./pages/Serves";
+import Blog from "./pages/Blog";
 import Index from "./pages/Index";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -16,6 +18,18 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <NotFoundPage />,
     children: [{ index: true, element: <Index /> }],
+  },
+  {
+    path: "/serves",
+    element: <Root />,
+    errorElement: <NotFoundPage />,
+    children: [{ index: true, element: <Serves /> }],
+  },
+  {
+    path: "/blog",
+    element: <Root />,
+    errorElement: <NotFoundPage />,
+    children: [{ index: true, element: <Blog /> }],
   },
 ]);
 
