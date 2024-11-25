@@ -4,10 +4,13 @@ import whatsApp from "../../assets/WhatsApp.png";
 import copml from "../../assets/service/Uniforms/caty/compl.png";
 
 const Card = ({ data }) => {
-  const { titel, prix, imgSrc } = data;
+  const { id, titel, prix, imgSrc } = data;
 
   return (
-    <div className=" hover:scale-105 cursor-pointer duration-200 transition-all relative border border-black w-[140px] h-[200px] mdl:w-[200px] mdl:h-[340px] ">
+    <a
+      href={`/serves/${id}`}
+      className=" hover:scale-105 cursor-pointer duration-200 transition-all relative border border-black w-[140px] h-[200px] mdl:w-[200px] mdl:h-[340px] "
+    >
       <img
         src={imgSrc}
         alt={titel}
@@ -28,7 +31,7 @@ const Card = ({ data }) => {
           />
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

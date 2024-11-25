@@ -23,7 +23,7 @@ const Index = () => {
       <Info />
       <Map />
       <Brand />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

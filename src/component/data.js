@@ -22,16 +22,66 @@ import staf from "../assets/service/Printing/caty/staf.png";
 import tshe from "../assets/service/Printing/caty/tsh.png";
 
 const dataUniforms = [
-  { titel: "ملابس ورشات", prix: "160", imgSrc: compl, catygory: "Uniforms" },
-  { titel: "ملابس ورشات", prix: "200", imgSrc: shonte, catygory: "Uniforms" },
-  { titel: "أزياء طبية ", prix: "280", imgSrc: dr, catygory: "Uniforms" },
-  { titel: "لباس مطاعم", prix: "120", imgSrc: coissin, catygory: "Uniforms" },
-  { titel: "سترات العمال", prix: "80", imgSrc: dosser, catygory: "Uniforms" },
-  { titel: "ألبسة خاصة ", prix: "175", imgSrc: uniform, catygory: "Uniforms" },
-  { titel: "بدلات رسمية", prix: "320", imgSrc: costim, catygory: "Uniforms" },
-  { titel: "عاملات ", prix: "180", imgSrc: women, catygory: "Uniforms" },
-  { titel: "لباس عمال", prix: "150", imgSrc: man, catygory: "Uniforms" },
-  { titel: "مطاعم خاصة", prix: "150", imgSrc: kok, catygory: "Uniforms" },
+  {
+    id: 1,
+    titel: "ملابس ورشات",
+    prix: "160",
+    imgSrc: compl,
+    imgList: [compl, compl, compl, compl],
+    desc: "نسعى جاهدين لتقديم منتجات لا تفي فقط بتوقعاتكم بل تتجاوزها ، سواء كنتم تبحثون عن ملابس رسمية للشركات تُبرز العلامة التجارية أو مواد ترويجية تترك انطباعًا لا يُنسى ، فإن فالكون هنا لدعم رحلتكم في بناء العلامة التجارية .ننتظر تواصلكم لتكتشفوا كيف يمكن لفالكون أن يسهم في تعزيز صورتكم المهنية والتميز في السوق.",
+    catygory: "Uniforms",
+  },
+  {
+    id: 2,
+    titel: "سترات الورشات",
+    prix: "200",
+    imgSrc: shonte,
+    catygory: "Uniforms",
+  },
+  {
+    id: 3,
+    titel: "أزياء طبية ",
+    prix: "280",
+    imgSrc: dr,
+    catygory: "Uniforms",
+  },
+  {
+    id: 4,
+    titel: "لباس مطاعم",
+    prix: "120",
+    imgSrc: coissin,
+    catygory: "Uniforms",
+  },
+  {
+    id: 5,
+    titel: "سترات العمال",
+    prix: "80",
+    imgSrc: dosser,
+    catygory: "Uniforms",
+  },
+  {
+    id: 6,
+    titel: "ألبسة خاصة ",
+    prix: "175",
+    imgSrc: uniform,
+    catygory: "Uniforms",
+  },
+  {
+    id: 7,
+    titel: "بدلات رسمية",
+    prix: "320",
+    imgSrc: costim,
+    catygory: "Uniforms",
+  },
+  { id: 8, titel: "عاملات ", prix: "180", imgSrc: women, catygory: "Uniforms" },
+  { id: 9, titel: "لباس عمال", prix: "150", imgSrc: man, catygory: "Uniforms" },
+  {
+    id: 10,
+    titel: "مطاعم خاصة",
+    prix: "150",
+    imgSrc: kok,
+    catygory: "Uniforms",
+  },
 ];
 
 const dataEmbroidery = [

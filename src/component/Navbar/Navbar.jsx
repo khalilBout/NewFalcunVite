@@ -13,12 +13,12 @@ const Navbar = () => {
     {
       id: 1,
       name: "خدماتنا",
-      href: "serves",
+      href: "/serves",
     },
     {
       id: 2,
       name: "المدونة",
-      href: "blog",
+      href: "/blog",
     },
   ];
   return (

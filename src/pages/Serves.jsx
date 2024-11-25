@@ -1,5 +1,4 @@
 import React from "react";
-import { Footer } from "../component/Footer/Footer";
 import Filter from "../component/Filter/Filter";
 
 const Serves = () => {
@@ -8,8 +7,6 @@ const Serves = () => {
       <section>
         <Filter />
       </section>
-
-      <Footer />
     </>
   );
 };
